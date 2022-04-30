@@ -29,7 +29,7 @@ from main.Database.database import Database
 from main.plugins.actions import force_sub
 from main.plugins.encoder import encode
 from main.plugins.ssgen import screenshot
-from LOCAL.localisation import source_text, SUPPORT_LINK
+from LOCAL.localisation import SUPPORT_LINK
 
 forcesubtext = f"Hᴇʏ Tʜᴇʀᴇ!  Tᴏ Usᴇ Tʜɪs Bᴏᴛ Yᴏᴜ Nᴇᴇᴅ Tᴏ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ"
 
