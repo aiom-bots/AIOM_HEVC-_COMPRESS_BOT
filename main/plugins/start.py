@@ -24,12 +24,14 @@ from LOCAL.localisation import info_text, spam_notice, help_text, DEV, source_te
 
 @Drone.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
-    await event.reply(f'{st}', 
-                      buttons=[
-                              [Button.inline("Menu.", data="menu")]
-                              ])
+    await event.reply(f'**Hᴇʟʟᴏ 👋 [{event.sender.first_name}](tg://user?id={event.sender_id}),\n\nTʜɪs Is A Hɪɢʜ Eꜰꜰɪᴄɪᴇɴᴄʏ Vɪᴅᴇᴏ Cᴏᴍᴘʀᴇssᴏʀ Bᴏᴛ\n\nYᴏᴜ Cᴀɴ Eɴᴄᴏᴅᴇ (ᴏʀ) Cᴏᴍᴘʀᴇss Vɪᴅᴇᴏs Fʀᴏᴍ Tʜɪs Bᴏᴛ\n\nCʜᴇᴄᴋ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Fᴏʀ Mᴏʀᴇ Iɴꜰᴏ\n\nPᴏᴡᴇʀᴇᴅ Bʏ : @AIOM_BOTS**',
+                      buttons=[[
+                         Button.inline("Hᴇʟᴘ", data="plugins"),
+                         Button.inline("Aʙᴏᴜᴛ", data="about")],
+                         [
+                         Button.inline("Cʟᴏsᴇ", data="close")]])
     tag = f'[{event.sender.first_name}](tg://user?id={event.sender_id})'
-    await Drone.send_message(int(ACCESS_CHANNEL), f'{tag} started the BOT')
+    await Drone.send_message(int(ACCESS_CHANNEL), f'{tag} Started The BOT')
     
 @Drone.on(events.callbackquery.CallbackQuery(data="menu"))
 async def menu(event):
