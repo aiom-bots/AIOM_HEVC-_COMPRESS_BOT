@@ -31,8 +31,7 @@ from main.plugins.encoder import encode
 from main.plugins.ssgen import screenshot
 from LOCAL.localisation import source_text, SUPPORT_LINK
 
-#Don't be a MF by stealing someone's hardwork.
-forcesubtext = f"Hey there!To use this bot you've to join @{FORCESUB_UN}.\n\nAlso join @DroneBots."
+forcesubtext = f"Hᴇʏ Tʜᴇʀᴇ!  Tᴏ Usᴇ Tʜɪs Bᴏᴛ Yᴏᴜ Nᴇᴇᴅ Tᴏ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ"
 
 @Drone.on(events.NewMessage(incoming=True,func=lambda e: e.is_private))
 async def compin(event):
@@ -42,21 +41,20 @@ async def compin(event):
         if media:
             yy = await force_sub(event.sender_id)
             if yy is True:
-                return await event.reply(forcesubtext)
+                return await event.reply(forcesubtext,
+                                   buttons=[[Button.url("Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{FORCESUB_UN}")]])
             banned = await db.is_banned(event.sender_id)
             if banned is True:
-                return await event.reply(f'you are Banned to use me!\n\ncontact [SUPPORT]({SUPPORT_LINK})', link_preview=False)
+                return await event.reply(f'Aᴄᴄᴇꜱꜱ ᴅᴇɴɪᴇᴅ 🚸')
             video = event.file.mime_type
             if 'video' in video:
-                await event.reply("📽",
+                await event.reply("•",
                             buttons=[
-                                [Button.inline("ENCODE", data="encode"),
-                                 Button.inline("COMPRESS", data="compress")],
-                                [Button.inline("CONVERT", data="convert"),
-                                 Button.inline("RENAME", data="rename")],
-                                [Button.inline("SSHOTS", data="sshots"),
-                                 Button.inline("TRIM", data="trim")]
-                            ])
+                                [Button.inline("Eɴᴄᴏᴅᴇ", data="encode"),
+                                 Button.inline("Cᴏᴍᴘʀᴇss", data="compress")],
+                         [Button.inline("Cᴏɴᴠᴇʀᴛ", data="convert"),
+                          Button.inline("✎ Rᴇɴᴀᴍᴇ", data="rename")]
+                     ])
             elif 'png' in video:
                 return
             elif 'jpeg' in video:
@@ -64,14 +62,14 @@ async def compin(event):
             elif 'jpg' in video:
                 return    
             else:
-                await event.reply('📦',
+                await event.reply('•',
                             buttons=[  
-                                [Button.inline("RENAME", data="rename")]])
+                                [Button.inline("✎ Rᴇɴᴀᴍᴇ", data="rename")]])
     await event.forward_to(int(ACCESS_CHANNEL))
     
 @Drone.on(events.callbackquery.CallbackQuery(data="encode"))
 async def _encode(event):
-    await event.edit("**🔀ENCODE**",
+    await event.edit("•",
                     buttons=[
                         [Button.inline("240p", data="240"),
                          Button.inline("360p", data="360")],
@@ -79,21 +77,20 @@ async def _encode(event):
                          Button.inline("720p", data="720")],
                         [Button.inline("x264", data="264"),
                          Button.inline("x265", data="265")],
-                        [Button.inline("BACK", data="back")]])
+                        [Button.inline("↵ Bᴀᴄᴋ", data="back")]])
      
 @Drone.on(events.callbackquery.CallbackQuery(data="compress"))
 async def _compress(event):
-    await event.edit("**🗜COMPRESS**",
+    await event.edit("**Wʜɪᴄʜ Cᴏᴍᴘʀᴇss Tʏᴘᴇ Is Yᴏᴜ Wᴀɴᴛ?**",
                     buttons=[
-                        [Button.inline("HEVC COMPRESS", data="hcomp"),
-                         Button.inline("FAST COMPRESS", data="fcomp")],
-                        [Button.inline("BACK", data="back")]])
-
+                        [Button.inline("Hᴇᴠᴄ Cᴏᴍᴘʀᴇss", data="hcomp"),
+                         Button.inline("Fᴀsᴛ Cᴏᴍᴘʀᴇss", data="fcomp")],
+                        [Button.inline("↵ Bᴀᴄᴋ", data="back")]])
 @Drone.on(events.callbackquery.CallbackQuery(data="convert"))
 async def convert(event):
     button = await event.get_message()
     msg = await button.get_reply_message()  
-    await event.edit("🔃**CONVERT**",
+    await event.edit("•",
                     buttons=[
                         [Button.inline("MP3", data="mp3"),
                          Button.inline("FLAC", data="flac"),
@@ -103,17 +100,17 @@ async def convert(event):
                          Button.inline("MKV", data="mkv")],
                         [Button.inline("FILE", data="file"),
                          Button.inline("VIDEO", data="video")],
-                        [Button.inline("BACK", data="back")]])
+                        [Button.inline("↵ Bᴀᴄᴋ", data="back")]])
                         
 @Drone.on(events.callbackquery.CallbackQuery(data="back"))
 async def back(event):
-    await event.edit("📽", buttons=[
-                    [Button.inline("ENCODE", data="encode"),
-                     Button.inline("COMPRESS", data="compress")],
-                    [Button.inline("CONVERT", data="convert"),
-                     Button.inline("RENAME", data="rename")],
-                    [Button.inline("SSHOTS", data="sshots"),
-                     Button.inline("TRIM", data="trim")]])
+    await event.reply("•",
+                     buttons=[
+                         [Button.inline("Eɴᴄᴏᴅᴇ", data="encode"),
+                          Button.inline("Cᴏᴍᴘʀᴇss", data="compress")],
+                         [Button.inline("Cᴏɴᴠᴇʀᴛ", data="convert"),
+                          Button.inline("✎ Rᴇɴᴀᴍᴇ", data="rename")]
+                     ])
     
 #-----------------------------------------------------------------------------------------
 
