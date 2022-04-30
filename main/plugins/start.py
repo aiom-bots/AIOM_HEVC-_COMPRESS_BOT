@@ -56,6 +56,7 @@ async def home(event):
 @Drone.on(events.callbackquery.CallbackQuery(data="about"))
 async def about(event):
     await event.edit(f'{about_text}',
+                    link_preview=False,
                     buttons=[[
                          Button.inline("Hᴇʟᴘ", data="plugins"),
                          Button.inline("Hᴏᴍᴇ", data="home")],
