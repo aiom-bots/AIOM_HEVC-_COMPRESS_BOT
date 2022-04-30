@@ -5,41 +5,31 @@ START_TEXT = "Send me any file to begin."
 
 FORCE_SUB_TEXT = "In order to use this bot, you've to join my parent channel."
 
-CHANNEL_LINK = "https://t.me/DroneBots"
+CHANNEL_LINK = "https://t.me/AIOM_BOTS"
 
-SUPPORT_LINK = "https://t.me/TeamDrone"
+SUPPORT_LINK = "https://t.me/AIOM_BOTS_GROUP"
 
-info_text = "This bot is developed by @MaheshChauhan\n\nWritten in python library TELETHON.\n\nBot by : @DroneBots\nSupport : @TeamDrone\n\nV1.4"   
-
-help_text = """**v1.4**
-
+help_text = """
 •`Encode` - encode your video into different lib format or resolution
 
-•`HEVC compress` - negligible loss compression
+•`HEVC Compress` - compress without quality loss
 
-•`FAST compress` - Very fast and Efficient compression
+•`FAST Compress` - Very fast and Efficient compression
 
 •`Convert` - change formats or extract audio of any video
 
-•`Rename` - rename any file, extension not required
+•`Rename` - rename any file
+"""
 
-•`SSHOTS` - generate 10 screenshots of your video
+DEV = "https://t.me/ajvadntr2"
 
-•`Trim` - cut your videos"""
+JPG = "https://telegra.ph/file/aa182e7a3416b9af178ab.jpg"
 
-source_text = "**Deploy your own bot**"
+JPG0 = 'https://telegra.ph/file/aa182e7a3416b9af178ab.jpg'
 
-DEV = "https://t.me/MaheshChauhan"
+JPG2 = "https://telegra.ph/file/aa182e7a3416b9af178ab.jpg"
 
-spam_notice = "This bot is hosted on heroku, and hence can just run one process at a time.Spamming the bot or encoding adult videos will lead you to a ban."
+JPG3 = "https://telegra.ph/file/aa182e7a3416b9af178ab.jpg"
 
-JPG = "LOCAL/video_convertor.jpg"
-
-JPG0 = 'https://telegra.ph/file/d98c559b56ef884ef3bad.jpg'
-
-JPG2 = "LOCAL/20211215_165751.jpg"
-
-JPG3 = "LOCAL/PicsArt_12-16-08.57.15.jpg"
-
-JPG4 = "LOCAL/20211219_000258.jpg"
+JPG4 = "https://telegra.ph/file/aa182e7a3416b9af178ab.jpg"
 
