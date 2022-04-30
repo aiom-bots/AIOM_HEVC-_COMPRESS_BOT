@@ -23,7 +23,7 @@ about_text = """╭──────{ Aʙᴏᴜᴛ }─────⍟
 │
 ├ Bᴏᴛ Nᴀᴍᴇ : [Hᴇᴠᴄ Cᴏᴍᴘʀᴇss Bᴏᴛ](https://t.me/AIOM_HEVC_COMPRESS_BOT)
 │
-├ Vᴇʀsɪᴏɴ : 3.0.8.1  [Bᴇᴛᴀ]
+├ Vᴇʀsɪᴏɴ : 3.0.8.1  Bᴇᴛᴀ
 │
 ├ Sᴇʀᴠᴇʀ : **[Okteto](https://cloud.okteto.com)**
 │
