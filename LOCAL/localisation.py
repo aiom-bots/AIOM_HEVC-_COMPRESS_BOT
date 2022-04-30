@@ -21,6 +21,25 @@ help_text = """
 •`Rename` - rename any file
 """
 
+about_text = """╭──────{ Aʙᴏᴜᴛ }─────⍟
+│
+├ Bᴏᴛ Nᴀᴍᴇ : [Hᴇᴠᴄ Cᴏᴍᴘʀᴇss Bᴏᴛ](https://t.me/AIOM_HEVC_COMPRESS_BOT)
+│
+├ Vᴇʀsɪᴏɴ : 1.0.0.0  Bᴇᴛᴀ
+│
+├ Sᴇʀᴠᴇʀ : [Hᴇʀᴏᴋᴜ](https://www.heroku.com)
+│
+├ Lɪʙʀᴀʀʏ : Tᴇʟᴇᴛʜᴏɴ
+│
+├ Dᴇᴠᴇʟᴏᴘᴇʀ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ChVivekTomar)
+│
+├ Eᴅɪᴛɪɴɢ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ajvadntr3)
+│
+├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
+│
+│
+╰──────[ Tʜᴀɴᴋ Yᴏᴜ ]───⍟‌‌"""
+
 DEV = "https://t.me/ajvadntr2"
 
 JPG = "https://telegra.ph/file/aa182e7a3416b9af178ab.jpg"
