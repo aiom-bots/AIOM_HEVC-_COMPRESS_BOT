@@ -1,4 +1,4 @@
-<h2 align="center">
+<h2
   <b>Hᴇᴠᴄ Cᴏᴍᴘʀᴇss Bᴏᴛ</b>
 </h2>
 
