@@ -23,15 +23,15 @@ about_text = """╭──────{ Aʙᴏᴜᴛ }─────⍟
 │
 ├ Bᴏᴛ Nᴀᴍᴇ : [Hᴇᴠᴄ Cᴏᴍᴘʀᴇss Bᴏᴛ](https://t.me/AIOM_HEVC_COMPRESS_BOT)
 │
-├ Vᴇʀsɪᴏɴ : 1.0.0.0  Bᴇᴛᴀ
+├ Vᴇʀsɪᴏɴ : 3.0.8.1  [Bᴇᴛᴀ]
 │
 ├ Sᴇʀᴠᴇʀ : **[Okteto](https://cloud.okteto.com)**
 │
 ├ Lɪʙʀᴀʀʏ : Tᴇʟᴇᴛʜᴏɴ
 │
-├ Dᴇᴠᴇʟᴏᴘᴇʀ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ChVivekTomar)
+├ Dᴇᴠᴇʟᴏᴘᴇʀ : [Mᴀʜᴇsʜ Cʜᴀᴜʜᴀɴ](https://t.me/MaheshChauhan)
 │
-├ Eᴅɪᴛɪɴɢ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ajvadntr3)
+├ Eᴅɪᴛɪɴɢ : [Δᒍ](https://t.me/ajvadntr2)
 │
 ├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
 │
