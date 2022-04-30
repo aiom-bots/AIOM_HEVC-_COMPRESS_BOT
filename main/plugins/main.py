@@ -327,8 +327,9 @@ async def _264(event):
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
-      
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
+        
 @Drone.on(events.callbackquery.CallbackQuery(data="265"))
 async def _265(event):
     yy = await force_sub(event.sender_id)
@@ -342,11 +343,12 @@ async def _265(event):
     if not os.path.isdir("encodemedia"):
         await event.delete()
         os.mkdir("encodemedia")
-        await compress(event, msg, ffmpeg_cmd=3, ps_name="**ENCODING:**")
+        await compress(event, msg, ffmpeg_cmd=3, ps_name="**Eɴᴄᴏᴅɪɴɢ**")
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
         
 @Drone.on(events.callbackquery.CallbackQuery(data="240"))
 async def _240(event):
@@ -365,7 +367,8 @@ async def _240(event):
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
         
 @Drone.on(events.callbackquery.CallbackQuery(data="360"))
 async def _360(event):
@@ -384,7 +387,8 @@ async def _360(event):
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
         
 @Drone.on(events.callbackquery.CallbackQuery(data="480"))
 async def _480(event):
@@ -403,7 +407,8 @@ async def _480(event):
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
         
 @Drone.on(events.callbackquery.CallbackQuery(data="720"))
 async def _720(event):
@@ -422,8 +427,9 @@ async def _720(event):
         os.rmdir("encodemedia")
         await set_timer(event, process1, timer) 
     else:
-        await event.edit(f"Another process in progress!\n\n**[LOG CHANNEL](https://t.me/{LOG_CHANNEL})**", link_preview=False)
-          
+        await event.edit(f"Aʟʀᴇᴀᴅʏ Oɴᴇ Pʀᴏᴄᴇss Gᴏɪɴɢ Oɴ",
+                        buttons=[[Button.url("Cʜᴇᴄᴋ Lɪᴠᴇ Sᴛᴀᴛᴜs", url=f"https://t.me/{LOG_CHANNEL}")]])
+        
 @Drone.on(events.callbackquery.CallbackQuery(data="sshots"))
 async def ss_(event):
     yy = await force_sub(event.sender_id)
